@@ -93,6 +93,16 @@
   }
   .text p { margin: 0 0 1.4em; }
   .text em { font-style: italic; }
+  .platzhalter {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr auto;
+    align-items: start;
+    gap: 0.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--linie);
+    opacity: 0.4;
+  }
+  .platzhalter .schalter { color: var(--leise); }
   .ablage {
     font-family: var(--mono);
     font-size: 0.85rem;
@@ -117,7 +127,7 @@
   </figure>
 
   <h1>1993–041</h1>
-  <p class="stand">Kurzgeschichte in fünf Teilen<br>Stand 19. September 2026</p>
+  <p class="stand">Kurzgeschichte in fünf Teilen<br>Stand 20. September 2026</p>
 
   <div class="teile">
     <details>
@@ -128,20 +138,25 @@
       </summary>
       <div class="text">
         <p>Es kam aus Coma Berenices, sechs Grad vom galaktischen Nordpol, aus einem Feld, das Kelly zuletzt als kalten Himmel benutzt hatte.</p>
-        <p>Seit dem 18. Oktober stand die Kennung in der Liste. Ellison hatte die Filter im Sommer neu aufgesetzt, und weil sie jedes Mal denselben auslöste, hielt Kelly sie zunächst für ein Problem der Auswertekette.</p>
-        <p>Schmalbandig, 1.612,4 Megahertz, Bandbreite unter drei Hertz. Kein Abgleich mit Satellitenbahnen ergab etwas. Kein Muster in der Amplitude, keine Modulation. Das System verwarf pro Tag vierhunderttausend Einträge. Dieser blieb liegen.</p>
-        <p>Für die Nachbeobachtung bekam sie zwei Termine im November. Die Antenne stand beide Male sechs Stunden auf der Position und lieferte sauberes Systemrauschen, achtzehn Kelvin, so wie es sollte. Wenn das Gerät in Ordnung ist, misst es die Kälte des leeren Himmels, und der Himmel war leer.</p>
-        <p>Sie notierte <em>vermutlich Interferenz, terrestrisch</em> und meldete die Frequenz zur Sperrung an. Die Prüfung ergab keine Quelle im Umkreis von zweihundert Kilometern. Kelly ließ den Vermerk stehen.</p>
-        <p>Am 2. Februar war es wieder da, und diesmal saß sie davor. Sie kam kurz nach Mitternacht an den Platz zurück, und der Ton lag schon auf dem Monitorlautsprecher, achthundert Hertz, darunter das Rauschen, das sie seit zehn Jahren kannte. Sie stellte den Becher ab und schrieb die Zeit ins Buch. 00:18.</p>
-        <p>Dieselbe Position, dieselbe Frequenz bis auf sechzig Kilohertz. Kelly blieb sitzen und hörte zu. Der Ton war am Ende genauso laut wie am Anfang. Er hatte schon gelaufen, als die Antenne auf die Position fuhr, und um 00:41 fuhr sie weiter, und er war weg. Aufgezeichnet waren dreiundzwanzig Minuten aus der Mitte.</p>
-        <p>Kein Stern innerhalb von neun Bogenminuten. Sie prüfte das Feld trotzdem gegen die Durchmusterung, gegen die Platten von 1954, gegen die Infrarotkataloge der letzten zehn Jahre. Kein Eintrag, in keinem Verzeichnis, seit Beginn der Aufzeichnungen. Kelly schrieb den Satz so in die Akte, weil er stimmte.</p>
-        <p>Ellison rechnete im Mai nach, wie schnell die Frequenz wandern durfte. Ein Stern steht still, die Erde dreht sich unter ihm weg, und das verschiebt den Ton um einen berechenbaren Betrag pro Sekunde. An diesem Datum, zu dieser Uhrzeit, bei dieser Deklination: 0,14 Hertz. Das Band zeigte 0,16.</p>
-        <p>Der Rest war zu klein, um etwas zu beweisen, und zu groß, um ihn wegzulassen. Er ließ sich als Bewegung der Quelle lesen, als Gang des Oszillators im Empfänger, als Ungenauigkeit der Korrektur selbst. Ellison trug alle drei in das Feld ein, das für eine Erklärung vorgesehen war. Er hatte die Antenne in dem Jahr zweimal gesehen, beide Male von außen.</p>
-        <p>Mehr störten ihn die Lücken. Er sagte, man müsse die Treffer über mehrere Jahre auftragen, gegen Uhrzeit und Datum, dann sähe man vielleicht, wann sie kam und wann nicht. Kelly trug die Termine in eine Tabelle ein und ließ die Spalte daneben frei.</p>
-        <p>Neunmal in neun Monaten. Der kürzeste Abstand lag bei sieben Tagen, der längste bei neunundneunzig. Keine zwei Treffer lagen auf derselben Frequenz, vom höchsten zum tiefsten waren es knapp dreihundert Kilohertz. Ein Sender, der wegläuft, tut genau das. Kelly sah darin den Vermerk bestätigt.</p>
-        <p>Im Oktober 1993 strich der Kongress die Mittel für das Programm. Die Antenne ging an das Observatorium zurück, die Datenträger an das Archiv.</p>
-        <p>In der letzten Woche hörte Kelly die dreiundzwanzig Minuten noch einmal ab, von vorn bis zum Abriss, im Büro, mit der Tür zu. Sie wusste, an welcher Stelle es abriss. Es riss an derselben Stelle ab.</p>
-        <p>Kelly trug den Eintrag in die Übergabeliste ein. <em>A. Kelly, 1993–041, ungeklärt.</em> Das Feld für die Nachbeobachtung ließ sie leer. Der Empfänger lief noch bis Jahresende.</p>
+        <p>Im Oktober tauchte es in der Trefferliste auf, und weil Ellison die Filter im Sommer neu aufgesetzt hatte und es jedes Mal denselben auslöste, hielt sie es erst für ein Problem der Auswertekette. Das System verwarf pro Tag vierhunderttausend Einträge. Dieser blieb liegen.</p>
+        <p>Schmalbandig, 1.612,4 Megahertz, unter drei Hertz breit. Kein Abgleich mit Satellitenbahnen ergab etwas. Keine Modulation, kein Muster in der Amplitude, nichts, was sich von einem Durchlauf zum nächsten verändert hätte.</p>
+        <p>Für die Nachbeobachtung bekam sie zwei Termine im November. Die Antenne stand beide Male sechs Stunden auf der Position, aus der es gekommen war, und lieferte achtzehn Kelvin, genau das, was ein leerer Himmel liefert.</p>
+        <p>Kelly schrieb <em>vermutlich Interferenz, terrestrisch</em> in die Akte und ließ die Frequenz sperren. Im Umkreis von zweihundert Kilometern um Goldstone gab es nichts, was auf 1.612 sendete.</p>
+        <p>Am 2. Februar kam sie kurz nach Mitternacht mit einem Becher zurück an den Platz, und auf dem Monitorlautsprecher lag ein Ton. Achthundert Hertz, darunter das Rauschen, das sie kannte. Sie schrieb die Zeit ins Buch, 00:18, und blieb sitzen.</p>
+        <p>Dieselbe Position wie im Oktober. Die Frequenz sechzig Kilohertz tiefer.</p>
+        <p>Der Pegel bewegte sich nicht. Es hatte gelaufen, bevor die Antenne auf die Position kam. Um 00:41 fuhr sie weiter, und es war weg.</p>
+        <p>Aufgezeichnet wurden dreiundzwanzig Minuten. Aus der Mitte von etwas.</p>
+        <p>Danach prüfte sie das Feld. Gegen die Durchmusterung, gegen die Platten von 1954, gegen jeden Infrarotkatalog der letzten zehn Jahre. Kein Eintrag, in keinem Verzeichnis, seit Beginn der Aufzeichnungen.</p>
+        <p>Ellison rechnete im Mai die Drift nach. An diesem Datum, zu dieser Uhrzeit, bei dieser Deklination: 0,14 Hertz pro Sekunde. Das Band zeigte 0,16.</p>
+        <p>Eine Differenz von 0,02. Zu klein, um etwas zu beweisen, und zu groß, um es zu ignorieren. Es ließ sich als Bewegung der Quelle lesen, als Fehler im Empfänger, als Ungenauigkeit der Korrektur.</p>
+        <p>Mehr störten ihn die Lücken. Er sagte, man müsse die Treffer über mehrere Jahre auftragen, gegen Uhrzeit und Datum. Kelly legte eine Tabelle an und ließ die Spalte daneben frei.</p>
+        <p>Neunmal in neun Monaten. Sieben Tage der kürzeste Abstand, neunundneunzig der längste. Keine zwei Treffer auf derselben Frequenz, vom höchsten zum tiefsten knapp dreihundert Kilohertz, sauber nach unten wandernd über die neun Monate. Genau das tut ein Sender am Boden. Kelly sah ihren Vermerk bestätigt und schrieb es so in die Akte.</p>
+        <p>Im Oktober strich der Kongress die Mittel, ein Jahr nach dem Start. Die Antenne in Goldstone ging an das Deep Space Network zurück, die Datenträger an das Archiv in Greenbelt, und Kelly hatte zwei Monate Zeit, ihren Schreibtisch zu räumen.</p>
+        <p>In der letzten Woche hörte sie die dreiundzwanzig Minuten noch einmal ab. Sie spulte zurück und ließ es noch einmal laufen. Beim dritten Mal nahm sie das Band heraus und legte es in die Kiste.</p>
+        <p>Das Wachbuch für die Nacht auf den 19. Dezember verzeichnet sie um 23:04 am Tor und um 00:11 wieder. Der zweite Eintrag steht auf der Seite des folgenden Tages. Vom Tor bis zum Ende der Zufahrt war es knapp ein Kilometer.</p>
+        <p>Kelly trug den Eintrag in die Übergabeliste ein. <em>A. Kelly, 1993–041, ungeklärt.</em> Das Feld für die Nachbeobachtung ließ sie leer.</p>
+        <p>Im Januar ging sie nach Green Bank.</p>
+        <p>Der Empfänger blieb aktiv. Er hing an derselben Antenne und kostete nichts. Wohin die Antenne ab jetzt fuhr, entschied das Deep Space Network, und was dabei aufgezeichnet wurde, bekam Kelly nicht mehr zu sehen.</p>
       </div>
     </details>
     <details>
@@ -151,105 +166,53 @@
         <span class="schalter"><span class="auf">öffnen</span><span class="zu">schließen</span></span>
       </summary>
       <div class="text">
-        <p>Bei der Migration des Archivs blieben fünf Einträge hängen. Die Prüfroutine verlangte für jeden Treffer eine Position, und bei diesen war das Feld leer. Lindquist hielt es für einen Formatfehler. Er hatte in vier Wochen elftausend Einträge umgeschrieben, keiner davon jünger als achtunddreißig Jahre, und alte Bänder machten das öfter.</p>
-        <p>Die Einträge stammten von zwei Bändern, die in der Übergabeliste nicht standen. November und Dezember 1993. Die Antenne hatte da schon wieder dem Observatorium gehört, und der Empfänger hatte mitgeschrieben, was hereinkam, ohne zu erfahren, wohin sie zeigte. Schmalbandig, unter drei Hertz, keine Modulation. Dieselbe Beschreibung stand in der Akte 1993–041, neunmal, jedes Mal mit Position.</p>
-        <p>In der Akte lag eine Tabelle mit neun Terminen und einer freien Spalte ohne Überschrift.</p>
-        <p>Lindquist trug auf, was er hatte. Vierzehn Einträge, dreizehn Abstände. Jeder Abstand war ein Vielfaches von 3,55 Tagen, der kürzeste das Doppelte.</p>
-        <p>Dann die Frequenzen. In der Akte galt die Streuung als Beleg für einen schlechten Sender am Boden, der über neun Monate nach unten weglief. Ein Sender, der wegläuft, kommt nicht zurück. Die fünf späten Einträge lagen wieder oben, fast genau dort, wo die Reihe begonnen hatte. Die Kurve schloss sich nach knapp vierhundert Tagen.</p>
-        <p>Lindquist rechnete nach, wie lange die Erde braucht, um die äußeren Planeten zu überrunden. Saturn 378 Tage, Uranus 370, Neptun 367.</p>
-        <p>399 braucht sie für Jupiter.</p>
-        <p>Lindquist rechnete die Bewegung zwischen Erde und Jupiter aus jedem der vierzehn Werte heraus. Was übrig blieb, war vierzehnmal dieselbe Zahl. Die dreihundert Kilohertz waren zwei Bahnen gewesen, neun Monate lang aufgezeichnet und geführt unter <em>vermutlich Interferenz, terrestrisch</em>.</p>
-        <p>Jupiter hatte in diesen Monaten zwanzig bis vierzig Grad neben dem Feld in Coma Berenices gestanden. Die Antenne hatte nie dorthin gezeigt. Es war von der Seite hereingekommen, und die Auswertekette hatte jedem Treffer die Richtung gegeben, in die gerade geschaut wurde. Kelly hatte neun Monate lang einen kalten Himmel geprüft, weil es im Protokoll stand.</p>
-        <p>Einer der Monde braucht für einen Umlauf 3,55 Tage.</p>
-        <p>Lindquist prüfte, was 1993 von uns dort gewesen war. Nichts. Fünf Vorbeiflüge seit 1973, Voyager 1979, keiner länger als ein paar Tage. Galileo kam im Dezember 1995 an und blieb.</p>
-        <p>Er sah nach, was über den Mond bekannt war. Unter dem Eis ein Ozean, tiefer als jeder auf der Erde und größer als alle zusammen, seit vier Milliarden Jahren ohne Licht.</p>
-        <p>Das Personalarchiv lag im selben Bestand. Kelly stand dort mit einer Adresse von 1994. Lindquist brauchte drei Anrufe.</p>
-        <p>„Die Kennung“, sagte sie, bevor er die Aktennummer zu Ende gelesen hatte. Sie war über achtzig.</p>
-        <p>Er sagte ihr, was in die freie Spalte gehörte.</p>
-        <p>„Wie weit?“</p>
-        <p>„Eine Dreiviertelstunde.“</p>
-        <p>Sie ließ sich die Zahl wiederholen. Dann fragte sie, ob jemand den Empfänger abgestellt habe.</p>
-        <p>„Ende Dezember. Bis dahin hat er weiter mitgeschrieben. Auf den letzten beiden Bändern sind fünf Einträge.“</p>
-        <p>„Wer hat sie gelesen?“</p>
-        <p>„Niemand. Bis vorletzte Woche.“</p>
-        <p>Kelly fragte, ob ihr Vermerk noch in der Akte stehe.</p>
-        <p>Seit einem Jahr war die Thetis im Jupitersystem. Lindquist fragte an, ob sie an dieser Stelle messen könne. Die Anfrage bekam eine Nummer.</p>
-        <p>Die Frequenz stand seit 1993 auf der Sperrliste, damit niemand sie mehr meldete. Lindquist ließ den Eintrag stehen und schrieb <em>Sender, Träger ohne Modulation, Modulation vermutlich ausgefallen.</em> In die fünf leeren Felder trug er ein, was die Prüfroutine verlangte: die Position Jupiters am jeweiligen Tag. Die Routine nahm die Einträge an.</p>
+        <p>Der Mann am Telefon las eine Aktennummer vor, aber bei der Jahreszahl wusste sie, worum es ging.</p>
+        <p>„Coma Berenices“, sagte Kelly.</p>
+        <p>Er hieß Lindquist und war Archivar. Bei der Migration waren fünf Einträge hängengeblieben, weil die Prüfroutine für jeden Treffer eine Position verlangte und bei diesen das Feld leer war. Er hielt es erst für einen Formatfehler.</p>
+        <p>Die Einträge kamen von zwei Bändern, November und Dezember 1993. Die hatte Kelly damals nicht mehr ausgewertet.</p>
+        <p>„Hat sich die je jemand angesehen?“</p>
+        <p>„Niemand“, sagte Lindquist. „Bis vorletzte Woche.“</p>
+        <p>1993 hatte sie neun Treffer gehabt. Neun Punkte über neun Monate, und darin sieht man eine Gerade, wenn man eine sucht. Jetzt waren es vierzehn, verteilt über vierzehn. Kelly saß zwei Tage am Küchentisch, mit dem Ausdruck und einem Bleistift.</p>
+        <p>Damals waren die Frequenzen über neun Monate nach unten gewandert, knapp dreihundert Kilohertz weit, und so verhält sich ein Sender am Boden, der sich langsam entfernt. Was sich entfernt, kommt nicht zurück. Die fünf neuen lagen wieder oben, dort, wo die Reihe im Oktober angefangen hatte.</p>
+        <p>Die Kurve schloss sich nach knapp vierhundert Tagen.</p>
+        <p>Kein Jahr. Nah dran, aber kein Jahr, und das hieß, dass sich noch etwas anderes mitbewegt hatte.</p>
+        <p>Kelly schlug nach, wie lange die Erde braucht, um an den äußeren Planeten vorbeizuziehen. Saturn 378 Tage. Uranus 370. Neptun 367.</p>
+        <p>Jupiter 399.</p>
+        <p>Sie rechnete die Bewegung zwischen Erde und Jupiter aus jedem der vierzehn Werte heraus. Was übrig blieb, war vierzehnmal dieselbe Zahl: 1.612,231.</p>
+        <p>Dann die Abstände. 7 Tage, 99, 14, 25, 21, 39, 32, 32. Kein gemeinsames Vielfaches, das sie kannte, bis sie es umdrehte und fragte, welche Zahl in alle acht passt.</p>
+        <p>3,55.</p>
+        <p>Etwas, das Jupiter umkreist.</p>
+        <p>Io braucht 1,77 Tage. Ganymed 7,15. Europa 3,55.</p>
+        <p>Achtunddreißig Jahre lang hatte sie gedacht, es käme aus Coma Berenices. Die Auswertekette hatte jedem Treffer die Richtung gegeben, in die die Antenne gerade zeigte, aber dort war nichts.</p>
+        <p>Jupiter hatte in diesen Monaten zwanzig bis vierzig Grad daneben gestanden, jede Nacht, hell genug, dass man ihn ohne Gerät sieht.</p>
+        <p>Achtunddreißig Jahre nach draußen. Es kam aus unserem Sonnensystem.</p>
+        <p>Die Bänder ließ sie sich schicken. 1993 hatte das System die Treffer gespeichert und nicht das, was dazwischen lag. Die Rohaufzeichnung gab es nur dort.</p>
+        <p>Es waren dieselben achthundert Hertz. Was darunter lag, hatte 1993 kein Gerät auflösen können. Der Träger war nicht glatt. Er bewegte sich, wenige Millihertz, in Schritten.</p>
+        <p>Kelly ließ die vierzehn Abschnitte gegeneinander laufen. Keine zwei Stellen waren gleich. In dreiundzwanzig Minuten wiederholte sich nichts. In vierzehn Abschnitten wiederholte sich nichts.</p>
+        <p>Lindquist fragte, ob das eine Nachricht sein könne.</p>
+        <p>Eine Nachricht, sagte Kelly, würde man zweimal senden.</p>
+        <p>Eine Sonde braucht fünf bis sechs Jahre bis Jupiter. Kelly sah nach, ob gerade etwas dort war.</p>
+        <p>Die Thetis flog seit einem Jahr durch das Jupitersystem und machte alle paar Wochen einen Vorbeiflug. Kelly schrieb an die Mission und hängte die vierzehn Werte an. Lindquist sagte, so etwas brauche seine Zeit. Sie war dreiundsiebzig und schickte es ab.</p>
+        <p>Es war Ende März. Sie ging um halb zehn vor die Tür und musste nicht suchen. Es war das Hellste am Himmel nach dem Mond, kaum zu übersehen.</p>
+        <p>Zweiundvierzig Lichtminuten.</p>
+        <p>Sie merkte erst, dass sie fror, als sie die Finger nicht mehr richtig bewegen konnte.</p>
       </div>
     </details>
-    <details>
-      <summary>
-        <span class="nummer">III</span>
-        <span class="kopf"><span>2032</span><span class="titel">Artefakt</span></span>
-        <span class="schalter"><span class="auf">öffnen</span><span class="zu">schließen</span></span>
-      </summary>
-      <div class="text">
-        <p>Am nördlichen Rand des Radarstreifens, außerhalb des Zielgebiets, stand eine senkrechte Linie. Die Auswertekette der Thetis hatte sie als Artefakt markiert, weil im Eis nichts senkrecht ist.</p>
-        <p>Reyes gehörte zu der Arbeitsgruppe, die sechs Jahre auf diesen Vorbeiflug über die Bruchzone gewartet hatte. Sie räumte die Ränder auf, weil die Veröffentlichung saubere Ränder brauchte. Artefakte verschwinden, wenn man die Daten anders rechnet. Dieses blieb, in jeder Rechnung, an derselben Stelle.</p>
-        <p>Die Stelle lag elf Kilometer neben einer Koordinate, zu der seit einem Jahr eine Anfrage offen war. Die Anfrage hatte eine Nummer und keinen Bearbeiter.</p>
-        <p>Über der Linie hätte ein Krater sein müssen. Was auf Europa fällt, kommt mit mindestens zwei Kilometern pro Sekunde an, langsamer geht es dort nicht, und es hinterlässt eine Schüssel und ein Trümmerfeld. Das Eis war eben. Etwas war hier hineingegangen, und es hatte gebremst.</p>
-        <p>Die Linie ließ sich neun Kilometer weit nach unten verfolgen und wich auf dieser Strecke um weniger als vierzig Meter von der Senkrechten ab. Darunter wurde das Eis zu warm für das Radar. Reyes trug die Abweichung mit Fehlergrenze ein, und ihr Bericht endete dort, wo das Echo endete.</p>
-        <p>Um die Linie herum war das Eis auf gut einem Kilometer Breite eine Spur wärmer als daneben. Wärme verläuft sich mit bekannter Geschwindigkeit, also ließ sich aus der Breite ein Alter rechnen. Älter als sechstausend Jahre. Eine obere Grenze ergab die Messung nicht. Es stand hier, bevor irgendwo jemand anfing, etwas aufzuschreiben.</p>
-        <p>Die Kamera hatte die Stelle nie im Auftrag gehabt. Sie lag am Rand einer Aufnahme, die den Sonnenstand dokumentieren sollte, und dort, am oberen Ende der Linie, saßen vier Bildpunkte, die heller waren als das Eis. Zwei Meter.</p>
-        <p>Reyes sah nach, wer die Stelle schon einmal fotografiert hatte. Voyager 2, am 9. Juli 1979, aus zweihunderttausend Kilometern, zwei Kilometer pro Bildpunkt. Die Bilder waren seither öffentlich. Auf ihnen war Eis.</p>
-        <p>Von der Erde aus ließ es sich leicht messen, seit man wusste, wohin die Antennen gehörten. Es erschien einmal pro Umlauf für einundsiebzig Minuten. Je enger etwas gebündelt ist, desto kürzer streicht es über einen Punkt, und aus einundsiebzig Minuten folgten fünf Grad und daraus eine Öffnung von zwei Metern. Dieselben zwei Meter.</p>
-        <p>Es ging senkrecht nach oben. Weil der Mond Jupiter immer dieselbe Seite zukehrt, beschrieb diese Richtung alle dreieinhalb Tage einen vollen Kreis, und für einundsiebzig Minuten lag die Erde darin.</p>
-        <p>Die Leistung rechnete Reyes zweimal. Anderthalb Kilowatt.</p>
-        <p>In der Datenbank der Mission gab es für Oberflächenmerkmale elf Klassen. Reyes legte eine zwölfte an, nannte sie <em>Sendeanlage</em> und schloss die Anfrage aus dem Vorjahr als erledigt.</p>
-        <p>Seit dem Wärmehof hatte die Erde ungefähr sechshunderttausendmal darin gelegen. Neun davon standen in Kellys Tabelle.</p>
-      </div>
-    </details>
-    <details>
-      <summary>
-        <span class="nummer">IV</span>
-        <span class="kopf"><span>2051</span><span class="titel">In Sicherheit</span></span>
-        <span class="schalter"><span class="auf">öffnen</span><span class="zu">schließen</span></span>
-      </summary>
-      <div class="text">
-        <p>Es gab anderthalb Kilowatt ab und war so kalt wie das Eis daneben.</p>
-        <p>Duarte saß in der Nachtschicht, und alles, was sie sah, war eine Dreiviertelstunde alt. Wer einen Befehl schickte, wartete anderthalb Stunden auf die Antwort und ging in der Zeit Kaffee holen. Der Lander hatte neunzehn Tage, so lange hielt die Elektronik in dieser Strahlung. Gebaut und geflogen worden war er in neunzehn Jahren.</p>
-        <p>Die Bilder zeigten zwei Meter an einem Stück. Das Eis ringsum war von der Strahlung stumpf geworden, wie alles dort oben. Das Objekt war es nicht. Die Geologen suchten eine Naht und die Ingenieure eine Klappe, und nach vier Tagen stand im Protokoll, es gebe keine Stelle, an der etwas hätte eingesetzt oder entnommen werden können.</p>
-        <p>Am fünften Tag sagte der Missionsleiter vor der Presse, hier habe sich etwas in Sicherheit gebracht. Es war ein schöner Satz, und am nächsten Morgen hieß das Objekt in den Zeitungen die Arche.</p>
-        <p>Auf der Durchleuchtung lagen vier Schatten, gleich groß, gleich angeordnet. Dazwischen war das Material ohne Korn und ohne Lagen, bis an die Auflösung der Anlage. Jemand nannte die Schatten Baugruppen, und das Wort blieb.</p>
-        <p>Man suchte die Reserve. Wer etwas baut, das lange laufen soll, baut eine ein. Es gab keine, und es gab keinen Platz, an dem etwas mitgeführt worden wäre.</p>
-        <p>Darunter war der Kanal zu, und das Radar fand nichts, was das Objekt mit dem verband, was hier einmal hinuntergegangen war. Es lag obenauf wie etwas, das man abgestellt hat.</p>
-        <p>Im Kontrollraum lief der Träger auf einem Lautsprecher, heruntergemischt auf achthundert Hertz, weil jemand das am ersten Tag so eingestellt hatte. Nach einer Woche hörte ihn niemand mehr.</p>
-        <p>Am elften Tag ging der Befehl für den Bohrer hinaus. Anderthalb Stunden später kam zurück, dass er zweiundzwanzig Sekunden gelaufen war, die Spitze flach, die Oberfläche unverändert. Am zwölften richteten sie den Sender des Landers darauf, eine Stunde lang, am vierzehnten die Neutronenquelle.</p>
-        <p>Die Neutronen brachten ein Spektrum zurück, und in dem Spektrum stand eine Linie. Ein Element, ein Isotop, daneben bis an die Nachweisgrenze nichts. Alles, was aus einer Sonne kommt, ist ein Gemisch. Die Messung wurde wiederholt und bestätigt.</p>
-        <p>Duarte ließ sie ein drittes Mal fahren. Die Neutronenquelle hatte Material für neunzehn Tage, und ein Durchgang kostete vier Stunden davon.</p>
-        <p>Ihr Schichtleiter fragte sie am Morgen, was sie erwartet habe.</p>
-        <p>„Etwas daneben“, sagte Duarte.</p>
-        <p>Am sechzehnten rechnete jemand aus, wie viel Energie seit dem Wärmehof durch das Objekt gegangen sein musste, wenn es die ganze Zeit anderthalb Kilowatt abgegeben hatte. In zwei Metern gibt es keinen Stoff, der so viel hergibt, und keinen Zerfall, den die Neutronen nicht gesehen hätten. Eine Leitung nach unten gab es nicht. Warm wurde es auch nicht. Die Zahl ging in die Tagesmeldung, in die Spalte für Zwischenergebnisse.</p>
-        <p>Die andere Zahl war jedes Mal 1.612,231 Megahertz, vor der Landung und nach dem Bohrer, nach der Stunde und nach den Neutronen, auf alle Stellen, die der Lander auflösen konnte. Der Ton im Lautsprecher hatte sich nicht bewegt.</p>
-        <p>Am neunzehnten Tag fielen die Kameras aus. Das letzte Bild zeigt zwei Meter Oberfläche aus zweiundvierzig Zentimetern. Als es ankam, war der Lander seit einer Dreiviertelstunde tot.</p>
-        <p>Im Kontrollraum war der Ton weg. Zwei Tage später, beim nächsten Durchgang, war er wieder da, einundsiebzig Minuten lang, über die Antennen auf der Erde. Duarte stellte den Lautsprecher ab.</p>
-        <p>Das Radar hatte neun Kilometer weit nach unten gereicht. Das Eis ist dort zwanzig Kilometer dick, und was darunter liegt, hat noch niemand von nahem gemessen. Der Lander stand zwei Meter neben einem Loch, das jemand hineingemacht hatte, und wog vierhundert Kilogramm.</p>
-        <p>Was in den neunzehn Tagen gekommen war, reichte für eine Signatur: die Frequenz, die Form der Linie und ein Gang von wenigen Millihertz, der sich alle vier Stunden, siebenunddreißig Minuten und elf Sekunden wiederholte. Im Jupitersystem dreht sich nichts in dieser Zeit.</p>
-        <p>Für die Akte 1993–041 verlangte das System eine Zeile. In der Akte stand seit 2031 ein Satz: <em>Sender, Träger ohne Modulation, Modulation vermutlich ausgefallen.</em> Duarte übernahm ihn und ersetzte das erste Wort.</p>
-        <p><em>Quelle, Träger ohne Modulation, Modulation vermutlich ausgefallen.</em></p>
-      </div>
-    </details>
-    <details>
-      <summary>
-        <span class="nummer">V</span>
-        <span class="kopf"><span>2051</span><span class="titel">Geräterauschen</span></span>
-        <span class="schalter"><span class="auf">öffnen</span><span class="zu">schließen</span></span>
-      </summary>
-      <div class="text">
-        <p>Der Eintrag stand seit 1961 im Störungskatalog der Station, unter Geräterauschen, und wiederholte sich alle vier Stunden, siebenunddreißig Minuten und elf Sekunden.</p>
-        <p>Gesucht hatte ihn niemand. Die Bibliothek der Referenzmuster wird zweimal im Jahr aktualisiert, und danach läuft über Nacht ein Abgleich, damit bekannte Störer nicht als neue Funde in die Auswertung gehen. In der Frühjahrsaktualisierung war die Signatur des Landers enthalten, weil Instrumentencharakterisierungen veröffentlicht werden. Am Morgen lag eine Trefferliste vor. Darauf stand eine Zeile.</p>
-        <p>Osei betreute die Kataloge von elf Stationen im Nordpazifik. Das Büro lag zwei Straßen vom Hafen, und wenn der Wind auflandig stand, roch der Flur nach Tang.</p>
-        <p>Die Frequenz war eine andere, und sie musste eine andere sein. 1,6 Gigahertz kommt durch Salzwasser keine Handbreit weit. Gleich war der Gang. Wenige Millihertz, dieselbe Form, derselbe Abstand.</p>
-        <p>Das Netz lag seit 1961 auf dem Grund. Davor hatte eine Vorgängerkette Papierstreifen geschrieben, und die Streifen lagen im Keller, in Rollen, nach Jahren sortiert.</p>
-        <p>Osei brauchte den dritten Karton. Das Papier war vergilbt, aber der Schreiber hatte sauber gearbeitet, und der Ausschlag stand alle vier Stunden und siebenunddreißig Minuten da, über Meter von Papier, immer gleich hoch. An einer Stelle hatte jemand mit Bleistift <em>Störung</em> danebengesetzt und ein Datum. Juni 1957.</p>
-        <p>Der Streifen fing im März 1954 an, weil die Kette vorher nicht existierte.</p>
-        <p>Osei prüfte den Abstand über die ganze Reihe, weil das zur Bearbeitung gehört. In siebzig Jahren hatte er sich nicht geändert. Er war ruhiger als die Uhren, mit denen man ihn aufgezeichnet hatte. Zwei davon waren in den Neunzigern nachgestellt worden, und in der Begründung stand, die Abweichung sei gegen eine stabile Referenz im Datenstrom aufgefallen. Man hatte die Uhren danach gestellt.</p>
-        <p>Um zwei kam dieselbe Meldung aus Wellington, aus einer Reihe, die den Druck misst. Die Bibliothek war an alle gegangen, und überall lief nachts derselbe Abgleich. Kurz nach fünf meldete eine Magnetometerkette vor Feuerland denselben Gang und denselben Abstand, in einer Reihe, die seit 1968 läuft.</p>
-        <p>Jede Meldung ging an die Stelle, die dafür zuständig war. Bis zum Abend waren es vier, und alle vier standen auf <em>abgearbeitet</em>.</p>
-        <p>Die Reihe wird nicht als Ton geführt, aber man kann sie hören, wenn man sie schnell genug abspielt. Osei ließ siebzig Jahre in einer Stunde laufen und setzte den Kopfhörer auf, weil im Flur niemand mehr war. Es war ein Schlag alle paar Sekunden, gleich laut am Ende wie am Anfang.</p>
-        <p>Draußen fing es an zu regnen. Der Grund liegt hier fünf Kilometer tief, und was sie hörte, war schon da, als der Mann mit dem Bleistift es aufschrieb.</p>
-      </div>
-    </details>
+    <div class="platzhalter">
+      <span class="nummer">III</span>
+      <span class="kopf"><span>2032</span><span class="titel">Artefakt</span></span>
+      <span class="schalter">in Arbeit</span>
+    </div>
+    <div class="platzhalter">
+      <span class="nummer">IV</span>
+      <span class="kopf"><span>2051</span><span class="titel">In Sicherheit</span></span>
+      <span class="schalter">in Arbeit</span>
+    </div>
+    <div class="platzhalter">
+      <span class="nummer">V</span>
+      <span class="kopf"><span>2052</span><span class="titel">ohne Titel</span></span>
+      <span class="schalter">in Arbeit</span>
+    </div>
   </div>
 
   <footer class="ablage">Written by Christopher Schmidtke</footer>

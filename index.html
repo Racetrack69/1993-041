@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>1993–041</title>
-<meta name="description" content="Kurzgeschichte in fünf Teilen.">
+<meta name="description" content="Kurzgeschichte. Teil I, weitere Teile folgen.">
 <meta property="og:title" content="1993–041">
-<meta property="og:description" content="Kurzgeschichte in fünf Teilen.">
+<meta property="og:description" content="Kurzgeschichte. Teil I, weitere Teile folgen.">
 <meta property="og:type" content="article">
 <meta name="color-scheme" content="dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f1317'/%3E%3Cpath d='M3 24h26' stroke='%2359636c' stroke-width='2'/%3E%3Cpath d='M13 24V5' stroke='%2352c2c8' stroke-width='3'/%3E%3C/svg%3E">
@@ -62,15 +62,14 @@
   }
   .teile { border-top: 1px solid var(--linie); }
   details { border-bottom: 1px solid var(--linie); }
-  summary {
+  summary, .folgt {
     display: grid;
     grid-template-columns: 3.5rem 1fr auto;
     align-items: start;
     gap: 0.5rem;
     padding: 1.5rem 0;
-    cursor: pointer;
-    list-style: none;
   }
+  summary { cursor: pointer; list-style: none; }
   summary::-webkit-details-marker { display: none; }
   summary:focus-visible { outline: 2px solid var(--traeger); outline-offset: 4px; }
   .nummer { font-size: 1.6rem; font-weight: 700; line-height: 1.15; }
@@ -81,6 +80,8 @@
   .schalter .zu { display: none; text-decoration: underline; text-underline-offset: 3px; }
   details[open] .schalter .auf { display: none; }
   details[open] .schalter .zu { display: inline; }
+  .folgt { border-bottom: 1px solid var(--linie); color: var(--leise); }
+  .folgt .nummer { color: #46505a; }
   .text {
     background: var(--flaeche);
     border-left: 2px solid var(--linie);
@@ -93,16 +94,6 @@
   }
   .text p { margin: 0 0 1.4em; }
   .text em { font-style: italic; }
-  .platzhalter {
-    display: grid;
-    grid-template-columns: 3.5rem 1fr auto;
-    align-items: start;
-    gap: 0.5rem;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid var(--linie);
-    opacity: 0.4;
-  }
-  .platzhalter .schalter { color: var(--leise); }
   .ablage {
     font-family: var(--mono);
     font-size: 0.85rem;
@@ -127,7 +118,7 @@
   </figure>
 
   <h1>1993–041</h1>
-  <p class="stand">Kurzgeschichte in fünf Teilen<br>Stand 20. September 2026</p>
+  <p class="stand">Kurzgeschichte<br>Stand 21. September 2026</p>
 
   <div class="teile">
     <details>
@@ -137,85 +128,43 @@
         <span class="schalter"><span class="auf">öffnen</span><span class="zu">schließen</span></span>
       </summary>
       <div class="text">
-        <p>Es kam aus Coma Berenices, sechs Grad vom galaktischen Nordpol, aus einem Feld, das Kelly zuletzt als kalten Himmel benutzt hatte.</p>
-        <p>Im Oktober tauchte es in der Trefferliste auf, und weil Ellison die Filter im Sommer neu aufgesetzt hatte und es jedes Mal denselben auslöste, hielt sie es erst für ein Problem der Auswertekette. Das System verwarf pro Tag vierhunderttausend Einträge. Dieser blieb liegen.</p>
-        <p>Schmalbandig, 1.612,4 Megahertz, unter drei Hertz breit. Kein Abgleich mit Satellitenbahnen ergab etwas. Keine Modulation, kein Muster in der Amplitude, nichts, was sich von einem Durchlauf zum nächsten verändert hätte.</p>
-        <p>Für die Nachbeobachtung bekam sie zwei Termine im November. Die Antenne stand beide Male sechs Stunden auf der Position, aus der es gekommen war, und lieferte achtzehn Kelvin, genau das, was ein leerer Himmel liefert.</p>
-        <p>Kelly schrieb <em>vermutlich Interferenz, terrestrisch</em> in die Akte und ließ die Frequenz sperren. Im Umkreis von zweihundert Kilometern um Goldstone gab es nichts, was auf 1.612 sendete.</p>
-        <p>Am 2. Februar kam sie kurz nach Mitternacht mit einem Becher zurück an den Platz, und auf dem Monitorlautsprecher lag ein Ton. Achthundert Hertz, darunter das Rauschen, das sie kannte. Sie schrieb die Zeit ins Buch, 00:18, und blieb sitzen.</p>
-        <p>Dieselbe Position wie im Oktober. Die Frequenz sechzig Kilohertz tiefer.</p>
-        <p>Der Pegel bewegte sich nicht. Es hatte gelaufen, bevor die Antenne auf die Position kam. Um 00:41 fuhr sie weiter, und es war weg.</p>
-        <p>Aufgezeichnet wurden dreiundzwanzig Minuten. Aus der Mitte von etwas.</p>
-        <p>Danach prüfte sie das Feld. Gegen die Durchmusterung, gegen die Platten von 1954, gegen jeden Infrarotkatalog der letzten zehn Jahre. Kein Eintrag, in keinem Verzeichnis, seit Beginn der Aufzeichnungen.</p>
-        <p>Ellison rechnete im Mai die Drift nach. An diesem Datum, zu dieser Uhrzeit, bei dieser Deklination: 0,14 Hertz pro Sekunde. Das Band zeigte 0,16.</p>
-        <p>Eine Differenz von 0,02. Zu klein, um etwas zu beweisen, und zu groß, um es zu ignorieren. Es ließ sich als Bewegung der Quelle lesen, als Fehler im Empfänger, als Ungenauigkeit der Korrektur.</p>
-        <p>Mehr störten ihn die Lücken. Er sagte, man müsse die Treffer über mehrere Jahre auftragen, gegen Uhrzeit und Datum. Kelly legte eine Tabelle an und ließ die Spalte daneben frei.</p>
-        <p>Neunmal in neun Monaten. Sieben Tage der kürzeste Abstand, neunundneunzig der längste. Keine zwei Treffer auf derselben Frequenz, vom höchsten zum tiefsten knapp dreihundert Kilohertz, sauber nach unten wandernd über die neun Monate. Genau das tut ein Sender am Boden. Kelly sah ihren Vermerk bestätigt und schrieb es so in die Akte.</p>
-        <p>Im Oktober strich der Kongress die Mittel, ein Jahr nach dem Start. Die Antenne in Goldstone ging an das Deep Space Network zurück, die Datenträger an das Archiv in Greenbelt, und Kelly hatte zwei Monate Zeit, ihren Schreibtisch zu räumen.</p>
-        <p>In der letzten Woche hörte sie die dreiundzwanzig Minuten noch einmal ab. Sie spulte zurück und ließ es noch einmal laufen. Beim dritten Mal nahm sie das Band heraus und legte es in die Kiste.</p>
-        <p>Das Wachbuch für die Nacht auf den 19. Dezember verzeichnet sie um 23:04 am Tor und um 00:11 wieder. Der zweite Eintrag steht auf der Seite des folgenden Tages. Vom Tor bis zum Ende der Zufahrt war es knapp ein Kilometer.</p>
-        <p>Kelly trug den Eintrag in die Übergabeliste ein. <em>A. Kelly, 1993–041, ungeklärt.</em> Das Feld für die Nachbeobachtung ließ sie leer.</p>
-        <p>Im Januar ging sie nach Green Bank.</p>
-        <p>Der Empfänger blieb aktiv. Er hing an derselben Antenne und kostete nichts. Wohin die Antenne ab jetzt fuhr, entschied das Deep Space Network, und was dabei aufgezeichnet wurde, bekam Kelly nicht mehr zu sehen.</p>
+        <p>Es tauchte im Oktober auf, als die Antenne auf Coma Berenices zeigte, sechs Grad vom galaktischen Nordpol, ein Feld, das Kelly zuletzt als kalten Himmel benutzt hatte.</p>
+        <p>Sie fand es zwei Tage später in der Trefferliste. Das Programm lief seit wenigen Wochen und Ellisons Filter waren noch keinen Monat alt. Das System verwarf vierhunderttausend Einträge am Tag. Dieser blieb übrig. Erst hielt sie ihn für einen Fehler.</p>
+        <p>Schmalbandig, 1.612,4 Megahertz, unter drei Hertz breit, keine Modulation. Der Abgleich mit bekannten Satellitenbahnen ergab nichts. Für die Nachbeobachtung bekam sie zwei Termine im November.</p>
+        <p>Die Antenne blieb beide Male sechs Stunden dort, wo sie beim ersten Treffer gestanden hatte, und lieferte achtzehn Kelvin Systemrauschen. Im Dezember bekam sie drei Nächte auf dem Feld, im Januar zwei. Sie saß in jeder bis zur letzten Minute, aber es kam nichts.</p>
+        <p>Am 2. Februar, kurz nach Mitternacht, war es wieder da.</p>
+        <p>Im Oktober nur eine Zeile in einer Liste, Zahlen ohne Ton, zwei Tage zu spät gefunden. Diesmal lief es, als sie davorsaß. Sie stand auf, ohne es zu merken, und hielt die Luft an. Die Frequenz schrieb sie falsch ins Buch, strich durch, schrieb noch einmal falsch. Dann lachte sie kurz auf. Ein Treffer ist ein Fehler. Ein zweiter an derselben Stelle ist der Moment, für den es das alles hier gab. Dreißig Jahre hatte man danach gesucht. Jetzt stand Kelly davor, und niemand sonst wusste es.</p>
+        <p>Aber sehen reichte nicht. Sie schaltete den Lautsprecher dazu, ohne den Blick vom Spektrum zu nehmen. Achthundert Hertz, darunter das Rauschen, das sie kannte.</p>
+        <p>Sie schrieb die Zeit ins Buch, 00:18, schief über zwei Zeilen. Ellisons Nummer kannte sie auswendig. Den Hörer hatte sie schon in der Hand. Der Lautsprecher stand einen halben Meter neben ihrem Ohr. Nach der zweiten Ziffer blieb ihr Finger über der dritten. Dann legte sie auf.</p>
+        <p>Um 00:41 fuhr die Antenne weiter. Ein Handgriff hätte sie auf der Position gehalten. Kelly ging ans Fenster, mit dem Rücken zum Lautsprecher, und sah in den Himmel. Hinter ihr kam wieder nur Rauschen. Irgendwann drehte sie sich um und drückte auf Stopp. Auf dem Band waren dreiundzwanzig Minuten Ton.</p>
+        <p>Da ist etwas.</p>
+        <p>Kelly fuhr erst im Morgengrauen nach Hause. Sie schlief bis Mittag und rechnete dann im Bett, bis die Rückseite des Ausdrucks voll war.</p>
+        <p>Am nächsten Tag faxte sie Ellison die Vorderseite nach Pasadena.</p>
+        <p>Drei Stunden später stand er in der Tür und redete, bevor er den Mantel aus hatte. Sie gingen die Bandbreite zusammen gegen alles durch, was ihnen an natürlichen Quellen einfiel, aber keine passte. Er wollte es hören, sofort.</p>
+        <p>Nach wenigen Sekunden griff er nach ihrem Arm und drückte ihn. Seine Hand war kalt.</p>
+        <p>Er nahm den Kopfhörer ab, bevor es zu Ende war, und schob seinen Stuhl zurück. Im Türrahmen sagte er, er werde sich die Zahlen ansehen. Sein Wagen stand noch eine halbe Stunde auf dem Parkplatz, bevor er wegfuhr.</p>
+        <p>Kelly führte eine eigene Tabelle. Den dritten Treffer fand sie erst am Morgen, als Zeile auf Papier. Den fünften bemerkte sie in derselben Nacht, eine Viertelstunde zu spät. Den siebten sah sie im Spektrum kommen. Sie schaltete den Lautsprecher an und zog den Stuhl heran.</p>
+        <p>Lange blieb sie nicht sitzen. Sie ließ den Ton laufen und trat hinaus.</p>
+        <p>Hier draußen wird es nach Sonnenuntergang schnell kalt, und der Himmel steht so voll, dass die Sternbilder darin untergehen. Kelly ging bis zum Ende der Zufahrt. Coma Berenices stand hoch über ihr. Sie suchte es nicht. Sie legte den Kopf in den Nacken und sah hinauf, ohne irgendwo hinzusehen.</p>
+        <p>Die Antenne fuhr auf die nächste Position. Das Surren der Motoren verstummte. Die Stille danach war eine andere.</p>
+        <p>Im Oktober strich der Kongress die Mittel für das Programm, nur ein Jahr nach dem Start. Die Antenne ging an das Deep Space Network zurück, die Datenträger nach Greenbelt ins Archiv. Kelly hatte zwei Monate, um ihren Schreibtisch zu räumen.</p>
+        <p>Sie räumte ihn nicht. Sie saß über der Tabelle. Neun Treffer in neun Monaten, sieben Tage der kürzeste Abstand, neunundneunzig der längste, keine zwei auf derselben Frequenz, ab Februar knapp dreihundert Kilohertz, sauber nach unten.</p>
+        <p>Das wirkt wie etwas, das sich entfernt, dachte sie.</p>
+        <p>Auf dem Tisch lag ein Blatt mit den Punkten, und sie zog Linien hindurch. Die Kurve lief über den Rand, und sie klebte ein zweites Blatt daran. Neun Punkte sind zu wenig, um diese Kurve zu schließen. Auf dem zweiten Blatt bog sie sich wieder nach oben, über leeres Papier.</p>
+        <p>In ihrer letzten Woche spielte sie das Band ab. Sie kam keine Minute weit. Sie nahm es heraus und legte es in die Kiste, mit der beschrifteten Seite nach unten.</p>
+        <p>Am selben Nachmittag meldete sie den ganzen Bereich, durch den es gewandert war, zur Sperrung und schrieb <em>vermutlich Interferenz, terrestrisch</em> in die Akte. Das Blatt mit der Kurve lag dabei unter ihrer Hand. In die Akte kam es nicht.</p>
+        <p>In der Nacht ging sie noch einmal bis zum Ende der Zufahrt, zehn Minuten vom Tor. Die Wache trug sie um 23:04 aus und um 00:11 wieder ein.</p>
+        <p>In die Übergabeliste schrieb sie zuerst zwei Zeilen. Übrig blieb eine: <em>A. Kelly, 1993–041, ungeklärt.</em> Das Feld für die Nachbeobachtung ist leer.</p>
+        <p>Der Empfänger lief noch bis Ende des Jahres. Was er dabei aufzeichnete, ging mit den Bändern nach Greenbelt.</p>
       </div>
     </details>
-    <details>
-      <summary>
-        <span class="nummer">II</span>
-        <span class="kopf"><span>2031</span><span class="titel">Formatfehler</span></span>
-        <span class="schalter"><span class="auf">öffnen</span><span class="zu">schließen</span></span>
-      </summary>
-      <div class="text">
-        <p>Der Mann am Telefon las eine Aktennummer vor, aber bei der Jahreszahl wusste sie, worum es ging.</p>
-        <p>„Coma Berenices“, sagte Kelly.</p>
-        <p>Er hieß Lindquist und war Archivar. Bei der Migration waren fünf Einträge hängengeblieben, weil die Prüfroutine für jeden Treffer eine Position verlangte und bei diesen das Feld leer war. Er hielt es erst für einen Formatfehler.</p>
-        <p>Die Einträge kamen von zwei Bändern, November und Dezember 1993. Die hatte Kelly damals nicht mehr ausgewertet.</p>
-        <p>„Hat sich die je jemand angesehen?“</p>
-        <p>„Niemand“, sagte Lindquist. „Bis vorletzte Woche.“</p>
-        <p>1993 hatte sie neun Treffer gehabt. Neun Punkte über neun Monate, und darin sieht man eine Gerade, wenn man eine sucht. Jetzt waren es vierzehn, verteilt über vierzehn. Kelly saß zwei Tage am Küchentisch, mit dem Ausdruck und einem Bleistift.</p>
-        <p>Damals waren die Frequenzen über neun Monate nach unten gewandert, knapp dreihundert Kilohertz weit, und so verhält sich ein Sender am Boden, der sich langsam entfernt. Was sich entfernt, kommt nicht zurück. Die fünf neuen lagen wieder oben, dort, wo die Reihe im Oktober angefangen hatte.</p>
-        <p>Die Kurve schloss sich nach knapp vierhundert Tagen.</p>
-        <p>Kein Jahr. Nah dran, aber kein Jahr, und das hieß, dass sich noch etwas anderes mitbewegt hatte.</p>
-        <p>Kelly schlug nach, wie lange die Erde braucht, um an den äußeren Planeten vorbeizuziehen. Saturn 378 Tage. Uranus 370. Neptun 367.</p>
-        <p>Jupiter 399.</p>
-        <p>Sie rechnete die Bewegung zwischen Erde und Jupiter aus jedem der vierzehn Werte heraus. Was übrig blieb, war vierzehnmal dieselbe Zahl: 1.612,231.</p>
-        <p>Dann die Abstände. 7 Tage, 99, 14, 25, 21, 39, 32, 32. Kein gemeinsames Vielfaches, das sie kannte, bis sie es umdrehte und fragte, welche Zahl in alle acht passt.</p>
-        <p>3,55.</p>
-        <p>Etwas, das Jupiter umkreist.</p>
-        <p>Io braucht 1,77 Tage. Ganymed 7,15. Europa 3,55.</p>
-        <p>Achtunddreißig Jahre lang hatte sie gedacht, es käme aus Coma Berenices. Die Auswertekette hatte jedem Treffer die Richtung gegeben, in die die Antenne gerade zeigte, aber dort war nichts.</p>
-        <p>Jupiter hatte in diesen Monaten zwanzig bis vierzig Grad daneben gestanden, jede Nacht, hell genug, dass man ihn ohne Gerät sieht.</p>
-        <p>Achtunddreißig Jahre nach draußen. Es kam aus unserem Sonnensystem.</p>
-        <p>Die Bänder ließ sie sich schicken. 1993 hatte das System die Treffer gespeichert und nicht das, was dazwischen lag. Die Rohaufzeichnung gab es nur dort.</p>
-        <p>Es waren dieselben achthundert Hertz. Was darunter lag, hatte 1993 kein Gerät auflösen können. Der Träger war nicht glatt. Er bewegte sich, wenige Millihertz, in Schritten.</p>
-        <p>Kelly ließ die vierzehn Abschnitte gegeneinander laufen. Keine zwei Stellen waren gleich. In dreiundzwanzig Minuten wiederholte sich nichts. In vierzehn Abschnitten wiederholte sich nichts.</p>
-        <p>Lindquist fragte, ob das eine Nachricht sein könne.</p>
-        <p>Eine Nachricht, sagte Kelly, würde man zweimal senden.</p>
-        <p>Eine Sonde braucht fünf bis sechs Jahre bis Jupiter. Kelly sah nach, ob gerade etwas dort war.</p>
-        <p>Die Thetis flog seit einem Jahr durch das Jupitersystem und machte alle paar Wochen einen Vorbeiflug. Kelly schrieb an die Mission und hängte die vierzehn Werte an. Lindquist sagte, so etwas brauche seine Zeit. Sie war dreiundsiebzig und schickte es ab.</p>
-        <p>Es war Ende März. Sie ging nachts um zwei vor die Tür und musste nicht suchen. Es war das Hellste am Himmel nach dem Mond, kaum zu übersehen.</p>
-        <p>Zweiundvierzig Lichtminuten.</p>
-        <p>Sie merkte erst, dass sie fror, als sie die Finger nicht mehr richtig bewegen konnte.</p>
-      </div>
-    </details>
-    <div class="platzhalter">
-      <span class="nummer">III</span>
-      <span class="kopf"><span>2032</span><span class="titel">Artefakt</span></span>
-      <span class="schalter">in Arbeit</span>
-    </div>
-    <div class="platzhalter">
-      <span class="nummer">IV</span>
-      <span class="kopf"><span>2051</span><span class="titel">In Sicherheit</span></span>
-      <span class="schalter">in Arbeit</span>
-    </div>
-    <div class="platzhalter">
-      <span class="nummer">V</span>
-      <span class="kopf"><span>2052</span><span class="titel">ohne Titel</span></span>
-      <span class="schalter">in Arbeit</span>
+    <div class="folgt">
+      <span class="nummer">II</span>
+      <span class="kopf"><span>folgt</span></span>
     </div>
   </div>
 
-  <footer class="ablage">Written by Christopher Schmidtke</footer>
+  <p class="ablage">1993–041, ungeklärt.</p>
 </main>
 </body>
 </html>
